@@ -13,10 +13,10 @@ jobs:
               run : env | sort
     job2:
         name: Second Job
-        uses: .github/actions/checkout@v2
+        uses: .github/workflows/actions/checkout@v2
         runs-on: windows-latest
         steps:
             - name: Step one
-              uses: .github/actions/checkout@v2
+              uses: .github/workflows/actions/checkout@v2
             - name: Step two
               run: "Get-ChildItem Env: | Sort-Object Name"
